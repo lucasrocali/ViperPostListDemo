@@ -23,7 +23,8 @@ class UserInfoWireframe: NSObject,UserInfoWireframeProtocol,UIViewControllerTran
         let UserInfoVC = view as! UserInfoViewController
         UserInfoVC.modalPresentationStyle = .custom
         UserInfoVC.transitioningDelegate = self
-        UserInfoVC.view.frame = CGRect(x: 0, y: 0, width: fview.view.bounds.size.width*0.8, height: fview.view.bounds.size.height*0.8)
+        UserInfoVC.view.frame = CGRect(x: 0, y: 0, width: fview.view.bounds.size.width*0.9, height: 300.0)
+        UserInfoVC.view.layer.cornerRadius = 10
 
         fview.present(UserInfoVC, animated: true, completion: nil)
 

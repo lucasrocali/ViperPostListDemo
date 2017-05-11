@@ -21,10 +21,6 @@ protocol PostListWireframeProtocol: class {
 
     func presentListInterfaceFromWindow(_ window: UIWindow)
 
-    //var somePopupWireframe : SomePopupWireframe? { get set }
-
-    //func presentSomePopupView(fpresenter : PostListPresenter)
-
     // PRESENTER -> WIREFRAME
     func showPostDetail(_ post:Post)
 
@@ -55,8 +51,4 @@ protocol PostListInteractorInputProtocol: class {
     func loadUsers()
     func loadComments()
 }
-/*
-protocol SomePopupDelegate {
-    func someFunctionFromSomePopup()
-}
-*/
+

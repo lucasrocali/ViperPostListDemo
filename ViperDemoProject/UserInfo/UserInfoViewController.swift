@@ -5,6 +5,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 class UserInfoViewController: UIViewController, UserInfoViewProtocol,PopUpProtocol {
 
@@ -14,6 +15,14 @@ class UserInfoViewController: UIViewController, UserInfoViewProtocol,PopUpProtoc
 
     var user:User = User()
 
+    @IBOutlet weak var nameUsernameLbl: UILabel!
+    @IBOutlet weak var emailLbl: UILabel!
+    @IBOutlet weak var phoneLbl: UILabel!
+    @IBOutlet weak var siteLbl: UILabel!
+    @IBOutlet weak var companyLbl: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
+
+    let annotation = MKPointAnnotation()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +30,16 @@ class UserInfoViewController: UIViewController, UserInfoViewProtocol,PopUpProtoc
 
         let gesture = UITapGestureRecognizer(target: self, action:  #selector (self.didTapBackgroundView (_:)))
         popUpInfo?.transitioningBackgroundView.addGestureRecognizer(gesture)
+
+        nameUsernameLbl.text = "\(user.name) - \(user.username)"
+        emailLbl.text = "Email: \(user.email)"
+        phoneLbl.text = "Phone: \(user.phone)"
+        siteLbl.text = "Site: \(user.website)"
+        companyLbl.text = "Company: \(user.companyName)"
+
+        annotation.coordinate = CLLocationCoordinate2D(latitude: Double(user.lat)!, longitude: Double(user.lng)!)
+        mapView.addAnnotation(annotation)
+        mapView.showAnnotations(self.mapView.annotations, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,4 +49,5 @@ class UserInfoViewController: UIViewController, UserInfoViewProtocol,PopUpProtoc
     func didTapBackgroundView(_ sender:UITapGestureRecognizer) {
          presenter?.closeView()
     }
+
 }
