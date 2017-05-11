@@ -43,12 +43,9 @@ class PostListTableViewController: UITableViewController, PostListViewProtocol {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath)
+        let cell : PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
 
-        let post = self.posts[indexPath.row]
-
-         cell.textLabel?.text = "userId \(post.owner?.id) postId \(post.id) fcomment: \(post.comments.first?.id)"
-
-         return cell
+        cell.setupCell(post: self.posts[indexPath.row])
+        return cell
     }
-    }
+}

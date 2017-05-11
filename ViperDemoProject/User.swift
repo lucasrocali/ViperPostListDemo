@@ -17,7 +17,6 @@ class User: Object {
     dynamic var email = ""
     dynamic var phone = ""
     dynamic var website = ""
-    let posts = List<Post>()
 
     override static func primaryKey() -> String? {
         return "id"

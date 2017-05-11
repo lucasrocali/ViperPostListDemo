@@ -5,7 +5,8 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11542"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,18 +27,62 @@
         <scene sceneID="FLG-uT-jmv">
             <objects>
                 <tableViewController storyboardIdentifier="PostListTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ofD-F1-dyf" customClass="PostListTableViewController" customModule="ViperDemoProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oy5-fq-5tY">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="28" sectionFooterHeight="28" id="oy5-fq-5tY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" id="z5O-kK-znb">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="115" id="z5O-kK-znb" customClass="PostTableViewCell" customModule="ViperDemoProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z5O-kK-znb" id="mV9-X6-8wL">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFV-L9-ZUN">
+                                            <rect key="frame" x="8" y="8" width="359" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KB-6b-6uz">
+                                            <rect key="frame" x="8" y="28" width="359" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Written by" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQf-yu-dZi">
+                                            <rect key="frame" x="312.5" y="93" width="54.5" height="13.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n comments" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA6-9c-NHl">
+                                            <rect key="frame" x="227.5" y="93" width="65" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="TFV-L9-ZUN" secondAttribute="trailing" id="3Sp-PG-szM"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="8KB-6b-6uz" secondAttribute="trailing" id="Fgk-Zd-ccp"/>
+                                        <constraint firstItem="IA6-9c-NHl" firstAttribute="centerY" secondItem="mQf-yu-dZi" secondAttribute="centerY" id="HMI-ig-GBG"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="8KB-6b-6uz" secondAttribute="leading" id="JJJ-EW-eqj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="mQf-yu-dZi" secondAttribute="trailing" id="JbG-aL-fyP"/>
+                                        <constraint firstItem="8KB-6b-6uz" firstAttribute="top" secondItem="TFV-L9-ZUN" secondAttribute="bottom" constant="2" id="NU2-dx-7Nj"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="mQf-yu-dZi" secondAttribute="bottom" id="hYx-QB-Fna"/>
+                                        <constraint firstAttribute="topMargin" secondItem="TFV-L9-ZUN" secondAttribute="top" id="msV-vo-sCw"/>
+                                        <constraint firstItem="mQf-yu-dZi" firstAttribute="leading" secondItem="IA6-9c-NHl" secondAttribute="trailing" constant="20" id="t7z-sy-3f0"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="TFV-L9-ZUN" secondAttribute="leading" id="zO3-l8-qR5"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="authorLbl" destination="mQf-yu-dZi" id="H3E-uT-KYQ"/>
+                                    <outlet property="bodyLbl" destination="8KB-6b-6uz" id="XLE-CC-N93"/>
+                                    <outlet property="commentsStatusLbl" destination="IA6-9c-NHl" id="A6b-wM-bRD"/>
+                                    <outlet property="titleLbl" destination="TFV-L9-ZUN" id="h3M-Fi-6aO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -48,7 +93,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Acb-CS-UVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1" y="12"/>
+            <point key="canvasLocation" x="0.80000000000000004" y="11.244377811094454"/>
         </scene>
     </scenes>
 </document>

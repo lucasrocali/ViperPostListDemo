@@ -11,7 +11,7 @@ import RealmSwift
 import SwiftyJSON
 
 class Comment: Object {
-    dynamic var owner: Post?
+    dynamic var postId = 0
     dynamic var id = 0
     dynamic var name = ""
     dynamic var email = ""
@@ -27,7 +27,7 @@ class Comment: Object {
         self.name = obj["name"].stringValue
         self.email = obj["email"].stringValue
         self.body = obj["body"].stringValue
-        self.owner = Post(id: obj["postId"].intValue)
+        self.postId = obj["postId"].intValue
     }
 
 }

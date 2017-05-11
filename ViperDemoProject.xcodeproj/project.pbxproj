@@ -40,6 +40,7 @@
 		783DCAE01EC2D2AD007D2540 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCADF1EC2D2AD007D2540 /* User.swift */; };
 		783DCAE41EC2D341007D2540 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAE31EC2D341007D2540 /* Comment.swift */; };
 		78DF46FA1EC2D9B200DE36E9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF46F91EC2D9B200DE36E9 /* DataManager.swift */; };
+		78DF46FE1EC3EB8B00DE36E9 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF46FC1EC3EB8B00DE36E9 /* PostTableViewCell.swift */; };
 		CD32AEAD15165A112C065B06 /* Pods_ViperDemoProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C11E37C8F2C0068C9FC3E39 /* Pods_ViperDemoProjectUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		783DCADF1EC2D2AD007D2540 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		783DCAE31EC2D341007D2540 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		78DF46F91EC2D9B200DE36E9 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		78DF46FC1EC3EB8B00DE36E9 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = ../PostTableViewCell.swift; sourceTree = "<group>"; };
 		799936AE452D72DD438BF563 /* Pods-ViperDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperDemoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperDemoProject/Pods-ViperDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		85E846B1025F6F9B18CD5F21 /* Pods-ViperDemoProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperDemoProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperDemoProjectTests/Pods-ViperDemoProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		A8D72D7362EE23D2AAF4B403 /* Pods-ViperDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperDemoProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperDemoProject/Pods-ViperDemoProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				783DCAB41EC2B53B007D2540 /* PostListPresenter.swift */,
 				783DCAB51EC2B53B007D2540 /* PostListProtocols.swift */,
 				783DCAB61EC2B53B007D2540 /* PostListTableViewController.swift */,
+				78DF46FC1EC3EB8B00DE36E9 /* PostTableViewCell.swift */,
 				783DCAB71EC2B53B007D2540 /* PostListWireframe.swift */,
 			);
 			path = PostList;
@@ -248,12 +251,20 @@
 		783DCADC1EC2CE7C007D2540 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				783DCADD1EC2D25E007D2540 /* Post.swift */,
-				783DCADF1EC2D2AD007D2540 /* User.swift */,
-				783DCAE31EC2D341007D2540 /* Comment.swift */,
+				78DF46FB1EC3EB5500DE36E9 /* Objects */,
 				78DF46F91EC2D9B200DE36E9 /* DataManager.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		78DF46FB1EC3EB5500DE36E9 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				783DCADD1EC2D25E007D2540 /* Post.swift */,
+				783DCADF1EC2D2AD007D2540 /* User.swift */,
+				783DCAE31EC2D341007D2540 /* Comment.swift */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 		C09122F144FAD81EB2DE2B76 /* Pods */ = {
@@ -576,6 +587,7 @@
 				783DCACA1EC2B697007D2540 /* UserDetailProtocols.swift in Sources */,
 				783DCAD51EC2B6B4007D2540 /* PostDetailItem.swift in Sources */,
 				783DCAD91EC2B6B4007D2540 /* PostDetailWireframe.swift in Sources */,
+				78DF46FE1EC3EB8B00DE36E9 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

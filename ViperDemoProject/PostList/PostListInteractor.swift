@@ -21,7 +21,32 @@ class PostListInteractor: PostListInteractorInputProtocol {
     }
 
     func loadAllData() {
-        loadComments()
+        if posts.count == 0 {
+            loadUsers()
+            loadComments()
+        } else {
+            self.presenter?.postsLoaded()
+        }
+    }
+
+    func loadUsers() {
+        firstly {
+            DataManager.loadUsers()
+            }.then { json -> Void in
+                print(json)
+                for obj in json.arrayValue {
+                    print(obj)
+                    let user = User(obj: obj)
+                    try! self.realm.write {
+                        self.realm.create(User.self, value: user, update: true)
+                    }
+                }
+            }.always {
+                let users = try! Realm().objects(User.self).toArray()
+                self.loadPosts()
+            }.catch { error in
+                print (error)
+        }
     }
 
     func loadPosts() {
@@ -35,37 +60,18 @@ class PostListInteractor: PostListInteractorInputProtocol {
                     let post = Post(obj: obj)
                     try! self.realm.write {
                         self.realm.create(Post.self, value: post, update: true)
-                        self.realm.create(User.self, value: post.owner!, update: true)
                     }
                     //self.posts.append(post)
                 }
             }.always {
                 self.posts = try! Realm().objects(Post.self).toArray()
-                self.presenter?.postsLoaded()
+                self.loadComments()
             }.catch { error in
                 print (error)
         }
     }
 
-    func loadUsers() {
-        firstly {
-            DataManager.loadPosts()
-            }.then { json -> Void in
-                print(json)
-                for obj in json.arrayValue {
-                    print(obj)
-                    let user = User(obj: obj)
-                    try! self.realm.write {
-                        self.realm.create(User.self, value: user, update: true)
-                    }
-                }
-            }.always {
-                let users = try! Realm().objects(User.self).toArray()
-                self.loadUsers()
-            }.catch { error in
-                print (error)
-        }
-    }
+
 
     func loadComments() {
         firstly {
@@ -81,7 +87,7 @@ class PostListInteractor: PostListInteractorInputProtocol {
                 }
             }.always {
                 let comments = try! Realm().objects(Comment.self).toArray()
-                self.loadPosts()
+                self.presenter?.postsLoaded()
             }.catch { error in
                 print (error)
         }

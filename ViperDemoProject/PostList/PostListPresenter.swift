@@ -23,7 +23,8 @@ class PostListPresenter: PostListPresenterProtocol, PostListInteractorOutputProt
     init() {}
 
     func getPosts() {
-        interactor?.loadAllData()    }
+        interactor?.loadAllData()
+    }
 
     func postsLoaded() {
         print("postsLoaded")

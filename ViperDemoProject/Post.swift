@@ -11,20 +11,13 @@ import RealmSwift
 import SwiftyJSON
 
 class Post: Object {
-    dynamic var owner: User?
+    dynamic var userId = 0
     dynamic var id = 0
     dynamic var title = ""
     dynamic var body = ""
 
-    //var comments: [Comment] = LinkingObjects(fromType: Comment.self, property: "owner").toArray()
-
     override static func primaryKey() -> String? {
         return "id"
-    }
-
-    convenience init(id: Int) {
-        self.init()
-        self.id = id
     }
 
     convenience init(obj: JSON) {
@@ -32,7 +25,18 @@ class Post: Object {
         self.id = obj["id"].intValue
         self.title = obj["title"].stringValue
         self.body = obj["body"].stringValue
-        self.owner = User(id: obj["userId"].intValue)
+        self.userId = obj["userId"].intValue
+    }
+
+    func getUser() -> User? {
+        let user : User? = try! Realm().objects(User.self).filter("id = \(self.userId)").first
+        return user
+    }
+
+    func getComments() -> [Comment] {
+        let comments : [Comment] = try! Realm().objects(Comment.self).filter("postId = \(self.id)").toArray()
+        return comments
+
     }
 
 }
