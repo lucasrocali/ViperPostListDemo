@@ -26,6 +26,7 @@ protocol PostListWireframeProtocol: class {
     //func presentSomePopupView(fpresenter : PostListPresenter)
 
     // PRESENTER -> WIREFRAME
+    func showPostDetail(_ post:Post)
 
 }
 
@@ -36,6 +37,7 @@ protocol PostListPresenterProtocol: class {
 
     // VIEW -> PRESENTER
     func getPosts()
+    func selectedPost(_ post:Post)
 }
 
 protocol PostListInteractorOutputProtocol: class {

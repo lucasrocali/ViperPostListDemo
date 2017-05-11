@@ -27,8 +27,11 @@ class PostListPresenter: PostListPresenterProtocol, PostListInteractorOutputProt
     }
 
     func postsLoaded() {
-        print("postsLoaded")
         view?.updatePosts((interactor?.posts)!)
+    }
+
+    func selectedPost(_ post: Post) {
+        wireframe?.showPostDetail(post)
     }
 
 }

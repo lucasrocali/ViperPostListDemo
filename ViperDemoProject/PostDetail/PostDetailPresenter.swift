@@ -4,13 +4,14 @@
 //
 
 import Foundation
+import UIKit
 
 class PostDetailPresenter: PostDetailPresenterProtocol, PostDetailInteractorOutputProtocol {
     
     weak var view: PostDetailViewProtocol? {
         didSet {
             if let view = view {
-                view.setNavInfo(title: "", leftBtnText: "",rightBtnText: "")
+                view.setNavInfo(title: "Post Detail", leftBtnText: "Voltar",rightBtnText: "")
 
             }
         }
@@ -18,16 +19,15 @@ class PostDetailPresenter: PostDetailPresenterProtocol, PostDetailInteractorOutp
 
     var interactor: PostDetailInteractorInputProtocol?
     var wireframe: PostDetailWireframeProtocol?
-    //var navigationWireframe : NavigationWireframe?
 
     init() {}
 
     func leftBtnClicked() {
-        //navigationWireframe?.back()
+        wireframe?.back()
     }
 
     func rightBtnClicked() {
-        //navigationWireframe?.next(inf)
+        //
     }
 
 }

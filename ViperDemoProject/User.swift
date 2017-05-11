@@ -17,6 +17,9 @@ class User: Object {
     dynamic var email = ""
     dynamic var phone = ""
     dynamic var website = ""
+    dynamic var lat = ""
+    dynamic var lng = ""
+    dynamic var companyName = ""
 
     override static func primaryKey() -> String? {
         return "id"
@@ -35,6 +38,9 @@ class User: Object {
         self.email = obj["email"].stringValue
         self.phone = obj["phone"].stringValue
         self.website = obj["website"].stringValue
+        self.lat = obj["address"]["geo"]["lat"].stringValue
+        self.lng = obj["address"]["geo"]["lng"].stringValue
+        self.companyName = obj["company"]["name"].stringValue
 
     }
 }

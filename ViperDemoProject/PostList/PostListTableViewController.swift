@@ -31,21 +31,23 @@ class PostListTableViewController: UITableViewController, PostListViewProtocol {
         self.tableView.reloadData()
     }
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return self.posts.count
+        return posts.count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : PostTableViewCell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
 
-        cell.setupCell(post: self.posts[indexPath.row])
+        cell.setupCell(post: posts[indexPath.row])
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)")
+
+        if indexPath.row < posts.count {
+            presenter?.selectedPost(posts[indexPath.row])
+        }
     }
 }

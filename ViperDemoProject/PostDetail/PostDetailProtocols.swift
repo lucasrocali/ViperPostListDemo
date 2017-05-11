@@ -19,13 +19,14 @@ protocol PostDetailViewProtocol: class {
 
 protocol PostDetailWireframeProtocol: class {
 
-    func pushModule(fnavc:UINavigationController)
+    func pushModule(fnavc:UINavigationController,post:Post)
 
     //var somePopupWireframe : SomePopupWireframe? { get set }
 
     //func presentSomePopupView(fpresenter : PostDetailPresenter)
 
     // PRESENTER -> WIREFRAME
+    func back()
 
 }
 
@@ -47,6 +48,8 @@ protocol PostDetailInteractorOutputProtocol: class {
 protocol PostDetailInteractorInputProtocol: class {
 
     var presenter: PostDetailInteractorOutputProtocol? { get set }
+
+    var post : Post { get  set }
 
     //PRESENTER -> INTERACTOR
 }

@@ -8,6 +8,10 @@ import Foundation
 class PostDetailInteractor: PostDetailInteractorInputProtocol {
 
     weak var presenter: PostDetailInteractorOutputProtocol?
+
+    var post : Post
     
-    init() {}
+    init() {
+        post = Post()
+    }
 }

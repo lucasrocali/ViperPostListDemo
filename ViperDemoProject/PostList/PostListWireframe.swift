@@ -10,7 +10,8 @@ class PostListWireframe: PostListWireframeProtocol {
 
     let PostListViewControllerIdentifier = "PostListTableViewController"
 
-    var navigationWireframe : NavigationWireframe?
+    var postDetailWireframe : PostDetailWireframe?
+    var navigationController : UINavigationController?
 
     func presentListInterfaceFromWindow(_ window: UIWindow) {
         //MODULE COMPONENTS
@@ -18,10 +19,7 @@ class PostListWireframe: PostListWireframeProtocol {
         let presenter: PostListPresenterProtocol & PostListInteractorOutputProtocol = PostListPresenter()
         let interactor: PostListInteractorInputProtocol = PostListInteractor()
 
-        navigationWireframe = NavigationWireframe()
-        //POPUPWIREFRAMES
-
-        //let somePopupWireframe = SomePopupWireFrame()
+        postDetailWireframe = PostDetailWireframe()
 
         //CONNECTING
         view.presenter = presenter
@@ -30,7 +28,7 @@ class PostListWireframe: PostListWireframeProtocol {
         presenter.interactor = interactor
         interactor.presenter = presenter
 
-        navigationWireframe?.showRootViewController(view as! UIViewController, inWindow: window)
+        showRootViewController(view as! UIViewController, inWindow: window)
     }
 
 
@@ -38,5 +36,21 @@ class PostListWireframe: PostListWireframeProtocol {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let PostListVC: PostListTableViewController = storyboard.instantiateViewController(withIdentifier: PostListViewControllerIdentifier) as! PostListTableViewController
         return PostListVC
+    }
+
+    func showRootViewController(_ viewController: UIViewController, inWindow: UIWindow) {
+        navigationController = navigationControllerFromWindow(inWindow)
+        navigationController?.viewControllers = [viewController]
+    }
+
+    func navigationControllerFromWindow(_ window: UIWindow) -> UINavigationController {
+        let navigationController = window.rootViewController as! UINavigationController
+        return navigationController
+    }
+
+    func showPostDetail(_ post:Post) {
+        if let navVC = self.navigationController {
+            postDetailWireframe?.pushModule(fnavc: navVC,post:post)
+        }
     }
 }

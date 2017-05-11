@@ -22,7 +22,6 @@
 		783DCABB1EC2B53B007D2540 /* PostListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAB51EC2B53B007D2540 /* PostListProtocols.swift */; };
 		783DCABC1EC2B53B007D2540 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAB61EC2B53B007D2540 /* PostListTableViewController.swift */; };
 		783DCABD1EC2B53B007D2540 /* PostListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAB71EC2B53B007D2540 /* PostListWireframe.swift */; };
-		783DCABF1EC2B613007D2540 /* NavigationWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCABE1EC2B613007D2540 /* NavigationWireframe.swift */; };
 		783DCAC71EC2B697007D2540 /* UserDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAC11EC2B697007D2540 /* UserDetailInteractor.swift */; };
 		783DCAC81EC2B697007D2540 /* UserDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAC21EC2B697007D2540 /* UserDetailItem.swift */; };
 		783DCAC91EC2B697007D2540 /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAC31EC2B697007D2540 /* UserDetailPresenter.swift */; };
@@ -86,7 +85,6 @@
 		783DCAB51EC2B53B007D2540 /* PostListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListProtocols.swift; sourceTree = "<group>"; };
 		783DCAB61EC2B53B007D2540 /* PostListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
 		783DCAB71EC2B53B007D2540 /* PostListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListWireframe.swift; sourceTree = "<group>"; };
-		783DCABE1EC2B613007D2540 /* NavigationWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationWireframe.swift; sourceTree = "<group>"; };
 		783DCAC11EC2B697007D2540 /* UserDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailInteractor.swift; sourceTree = "<group>"; };
 		783DCAC21EC2B697007D2540 /* UserDetailItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailItem.swift; sourceTree = "<group>"; };
 		783DCAC31EC2B697007D2540 /* UserDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				783DCADC1EC2CE7C007D2540 /* Common */,
-				783DCABE1EC2B613007D2540 /* NavigationWireframe.swift */,
 				783DCAB11EC2B53B007D2540 /* PostList */,
 				783DCACD1EC2B6B4007D2540 /* PostDetail */,
 				783DCAC01EC2B697007D2540 /* UserDetail */,
@@ -567,7 +564,6 @@
 				783DCABC1EC2B53B007D2540 /* PostListTableViewController.swift in Sources */,
 				783DCAB81EC2B53B007D2540 /* PostListInteractor.swift in Sources */,
 				783DCAC91EC2B697007D2540 /* UserDetailPresenter.swift in Sources */,
-				783DCABF1EC2B613007D2540 /* NavigationWireframe.swift in Sources */,
 				783DCABD1EC2B53B007D2540 /* PostListWireframe.swift in Sources */,
 				783DCABA1EC2B53B007D2540 /* PostListPresenter.swift in Sources */,
 				783DCACC1EC2B697007D2540 /* UserDetailWireframe.swift in Sources */,

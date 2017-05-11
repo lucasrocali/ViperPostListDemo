@@ -10,9 +10,10 @@ class PostDetailWireframe: PostDetailWireframeProtocol {
 
     let PostDetailViewControllerIdentifier = "PostDetailViewController"
 
+    var navigationController : UINavigationController?
     //var somePopupWireframe : SomePopupWireframe?
     
-    func pushModule(fnavc:UINavigationController) {
+    func pushModule(fnavc:UINavigationController,post:Post) {
         //MODULE COMPONENTS
         let view: PostDetailViewProtocol = getPostDetailViewController()
         let presenter: PostDetailPresenterProtocol & PostDetailInteractorOutputProtocol = PostDetailPresenter()
@@ -28,6 +29,9 @@ class PostDetailWireframe: PostDetailWireframeProtocol {
         presenter.wireframe = self
         presenter.interactor = interactor
         interactor.presenter = presenter
+        interactor.post = post
+
+        navigationController = fnavc
 
         let PostDetailVC = view as! UIViewController
         fnavc.pushViewController(PostDetailVC, animated: true)
@@ -38,6 +42,10 @@ class PostDetailWireframe: PostDetailWireframeProtocol {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let PostDetailVC: PostDetailViewController = storyboard.instantiateViewController(withIdentifier: PostDetailViewControllerIdentifier) as! PostDetailViewController
         return PostDetailVC
+    }
+
+    func back() {
+        navigationController?.popViewController(animated: true)
     }
 
     /*

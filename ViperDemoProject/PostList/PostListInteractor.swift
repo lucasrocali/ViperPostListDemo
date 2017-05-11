@@ -42,7 +42,6 @@ class PostListInteractor: PostListInteractorInputProtocol {
                     }
                 }
             }.always {
-                let users = try! Realm().objects(User.self).toArray()
                 self.loadPosts()
             }.catch { error in
                 print (error)
@@ -86,7 +85,6 @@ class PostListInteractor: PostListInteractorInputProtocol {
                     }
                 }
             }.always {
-                let comments = try! Realm().objects(Comment.self).toArray()
                 self.presenter?.postsLoaded()
             }.catch { error in
                 print (error)
