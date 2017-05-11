@@ -22,12 +22,6 @@
 		783DCABB1EC2B53B007D2540 /* PostListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAB51EC2B53B007D2540 /* PostListProtocols.swift */; };
 		783DCABC1EC2B53B007D2540 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAB61EC2B53B007D2540 /* PostListTableViewController.swift */; };
 		783DCABD1EC2B53B007D2540 /* PostListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAB71EC2B53B007D2540 /* PostListWireframe.swift */; };
-		783DCAC71EC2B697007D2540 /* UserDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAC11EC2B697007D2540 /* UserDetailInteractor.swift */; };
-		783DCAC81EC2B697007D2540 /* UserDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAC21EC2B697007D2540 /* UserDetailItem.swift */; };
-		783DCAC91EC2B697007D2540 /* UserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAC31EC2B697007D2540 /* UserDetailPresenter.swift */; };
-		783DCACA1EC2B697007D2540 /* UserDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAC41EC2B697007D2540 /* UserDetailProtocols.swift */; };
-		783DCACB1EC2B697007D2540 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAC51EC2B697007D2540 /* UserDetailViewController.swift */; };
-		783DCACC1EC2B697007D2540 /* UserDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAC61EC2B697007D2540 /* UserDetailWireframe.swift */; };
 		783DCAD41EC2B6B4007D2540 /* PostDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCACE1EC2B6B4007D2540 /* PostDetailInteractor.swift */; };
 		783DCAD51EC2B6B4007D2540 /* PostDetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCACF1EC2B6B4007D2540 /* PostDetailItem.swift */; };
 		783DCAD61EC2B6B4007D2540 /* PostDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAD01EC2B6B4007D2540 /* PostDetailPresenter.swift */; };
@@ -40,6 +34,14 @@
 		783DCAE41EC2D341007D2540 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DCAE31EC2D341007D2540 /* Comment.swift */; };
 		78DF46FA1EC2D9B200DE36E9 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF46F91EC2D9B200DE36E9 /* DataManager.swift */; };
 		78DF46FE1EC3EB8B00DE36E9 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF46FC1EC3EB8B00DE36E9 /* PostTableViewCell.swift */; };
+		78DF47021EC4020A00DE36E9 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF47011EC4020A00DE36E9 /* CommentTableViewCell.swift */; };
+		78DF47081EC4074400DE36E9 /* UserInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF47041EC4074400DE36E9 /* UserInfoPresenter.swift */; };
+		78DF47091EC4074400DE36E9 /* UserInfoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF47051EC4074400DE36E9 /* UserInfoProtocols.swift */; };
+		78DF470A1EC4074400DE36E9 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF47061EC4074400DE36E9 /* UserInfoViewController.swift */; };
+		78DF470B1EC4074400DE36E9 /* UserInfoWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF47071EC4074400DE36E9 /* UserInfoWireframe.swift */; };
+		78DF470D1EC4087A00DE36E9 /* PopUpDismissalTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF470C1EC4087A00DE36E9 /* PopUpDismissalTransaction.swift */; };
+		78DF470F1EC408BF00DE36E9 /* PopUpProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF470E1EC408BF00DE36E9 /* PopUpProtocol.swift */; };
+		78DF47111EC408DD00DE36E9 /* PopUpPresentationTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF47101EC408DD00DE36E9 /* PopUpPresentationTransaction.swift */; };
 		CD32AEAD15165A112C065B06 /* Pods_ViperDemoProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C11E37C8F2C0068C9FC3E39 /* Pods_ViperDemoProjectUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,12 +87,6 @@
 		783DCAB51EC2B53B007D2540 /* PostListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListProtocols.swift; sourceTree = "<group>"; };
 		783DCAB61EC2B53B007D2540 /* PostListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
 		783DCAB71EC2B53B007D2540 /* PostListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListWireframe.swift; sourceTree = "<group>"; };
-		783DCAC11EC2B697007D2540 /* UserDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailInteractor.swift; sourceTree = "<group>"; };
-		783DCAC21EC2B697007D2540 /* UserDetailItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailItem.swift; sourceTree = "<group>"; };
-		783DCAC31EC2B697007D2540 /* UserDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailPresenter.swift; sourceTree = "<group>"; };
-		783DCAC41EC2B697007D2540 /* UserDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailProtocols.swift; sourceTree = "<group>"; };
-		783DCAC51EC2B697007D2540 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
-		783DCAC61EC2B697007D2540 /* UserDetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailWireframe.swift; sourceTree = "<group>"; };
 		783DCACE1EC2B6B4007D2540 /* PostDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailInteractor.swift; sourceTree = "<group>"; };
 		783DCACF1EC2B6B4007D2540 /* PostDetailItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailItem.swift; sourceTree = "<group>"; };
 		783DCAD01EC2B6B4007D2540 /* PostDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailPresenter.swift; sourceTree = "<group>"; };
@@ -103,6 +99,14 @@
 		783DCAE31EC2D341007D2540 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		78DF46F91EC2D9B200DE36E9 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		78DF46FC1EC3EB8B00DE36E9 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostTableViewCell.swift; path = ../PostTableViewCell.swift; sourceTree = "<group>"; };
+		78DF47011EC4020A00DE36E9 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		78DF47041EC4074400DE36E9 /* UserInfoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoPresenter.swift; sourceTree = "<group>"; };
+		78DF47051EC4074400DE36E9 /* UserInfoProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoProtocols.swift; sourceTree = "<group>"; };
+		78DF47061EC4074400DE36E9 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		78DF47071EC4074400DE36E9 /* UserInfoWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoWireframe.swift; sourceTree = "<group>"; };
+		78DF470C1EC4087A00DE36E9 /* PopUpDismissalTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpDismissalTransaction.swift; sourceTree = "<group>"; };
+		78DF470E1EC408BF00DE36E9 /* PopUpProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpProtocol.swift; sourceTree = "<group>"; };
+		78DF47101EC408DD00DE36E9 /* PopUpPresentationTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpPresentationTransaction.swift; sourceTree = "<group>"; };
 		799936AE452D72DD438BF563 /* Pods-ViperDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperDemoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperDemoProject/Pods-ViperDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		85E846B1025F6F9B18CD5F21 /* Pods-ViperDemoProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperDemoProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperDemoProjectTests/Pods-ViperDemoProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		A8D72D7362EE23D2AAF4B403 /* Pods-ViperDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperDemoProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperDemoProject/Pods-ViperDemoProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,7 +179,7 @@
 				783DCADC1EC2CE7C007D2540 /* Common */,
 				783DCAB11EC2B53B007D2540 /* PostList */,
 				783DCACD1EC2B6B4007D2540 /* PostDetail */,
-				783DCAC01EC2B697007D2540 /* UserDetail */,
+				78DF47031EC4074400DE36E9 /* UserInfo */,
 				783DCA801EC2B387007D2540 /* AppDelegate.swift */,
 				783DCA841EC2B387007D2540 /* Main.storyboard */,
 				783DCA8A1EC2B387007D2540 /* Assets.xcassets */,
@@ -219,19 +223,6 @@
 			path = PostList;
 			sourceTree = "<group>";
 		};
-		783DCAC01EC2B697007D2540 /* UserDetail */ = {
-			isa = PBXGroup;
-			children = (
-				783DCAC11EC2B697007D2540 /* UserDetailInteractor.swift */,
-				783DCAC21EC2B697007D2540 /* UserDetailItem.swift */,
-				783DCAC31EC2B697007D2540 /* UserDetailPresenter.swift */,
-				783DCAC41EC2B697007D2540 /* UserDetailProtocols.swift */,
-				783DCAC51EC2B697007D2540 /* UserDetailViewController.swift */,
-				783DCAC61EC2B697007D2540 /* UserDetailWireframe.swift */,
-			);
-			path = UserDetail;
-			sourceTree = "<group>";
-		};
 		783DCACD1EC2B6B4007D2540 /* PostDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +232,7 @@
 				783DCAD11EC2B6B4007D2540 /* PostDetailProtocols.swift */,
 				783DCAD21EC2B6B4007D2540 /* PostDetailViewController.swift */,
 				783DCAD31EC2B6B4007D2540 /* PostDetailWireframe.swift */,
+				78DF47011EC4020A00DE36E9 /* CommentTableViewCell.swift */,
 			);
 			path = PostDetail;
 			sourceTree = "<group>";
@@ -250,6 +242,9 @@
 			children = (
 				78DF46FB1EC3EB5500DE36E9 /* Objects */,
 				78DF46F91EC2D9B200DE36E9 /* DataManager.swift */,
+				78DF470E1EC408BF00DE36E9 /* PopUpProtocol.swift */,
+				78DF47101EC408DD00DE36E9 /* PopUpPresentationTransaction.swift */,
+				78DF470C1EC4087A00DE36E9 /* PopUpDismissalTransaction.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -262,6 +257,17 @@
 				783DCAE31EC2D341007D2540 /* Comment.swift */,
 			);
 			name = Objects;
+			sourceTree = "<group>";
+		};
+		78DF47031EC4074400DE36E9 /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				78DF47041EC4074400DE36E9 /* UserInfoPresenter.swift */,
+				78DF47051EC4074400DE36E9 /* UserInfoProtocols.swift */,
+				78DF47061EC4074400DE36E9 /* UserInfoViewController.swift */,
+				78DF47071EC4074400DE36E9 /* UserInfoWireframe.swift */,
+			);
+			path = UserInfo;
 			sourceTree = "<group>";
 		};
 		C09122F144FAD81EB2DE2B76 /* Pods */ = {
@@ -559,14 +565,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				783DCAD61EC2B6B4007D2540 /* PostDetailPresenter.swift in Sources */,
+				78DF470A1EC4074400DE36E9 /* UserInfoViewController.swift in Sources */,
 				783DCAD81EC2B6B4007D2540 /* PostDetailViewController.swift in Sources */,
-				783DCAC81EC2B697007D2540 /* UserDetailItem.swift in Sources */,
 				783DCABC1EC2B53B007D2540 /* PostListTableViewController.swift in Sources */,
+				78DF470B1EC4074400DE36E9 /* UserInfoWireframe.swift in Sources */,
 				783DCAB81EC2B53B007D2540 /* PostListInteractor.swift in Sources */,
-				783DCAC91EC2B697007D2540 /* UserDetailPresenter.swift in Sources */,
 				783DCABD1EC2B53B007D2540 /* PostListWireframe.swift in Sources */,
 				783DCABA1EC2B53B007D2540 /* PostListPresenter.swift in Sources */,
-				783DCACC1EC2B697007D2540 /* UserDetailWireframe.swift in Sources */,
 				783DCAE41EC2D341007D2540 /* Comment.swift in Sources */,
 				78DF46FA1EC2D9B200DE36E9 /* DataManager.swift in Sources */,
 				783DCAD71EC2B6B4007D2540 /* PostDetailProtocols.swift in Sources */,
@@ -574,16 +579,19 @@
 				783DCADE1EC2D25E007D2540 /* Post.swift in Sources */,
 				783DCAB91EC2B53B007D2540 /* PostListItem.swift in Sources */,
 				783DCA811EC2B387007D2540 /* AppDelegate.swift in Sources */,
-				783DCACB1EC2B697007D2540 /* UserDetailViewController.swift in Sources */,
-				783DCAC71EC2B697007D2540 /* UserDetailInteractor.swift in Sources */,
+				78DF47111EC408DD00DE36E9 /* PopUpPresentationTransaction.swift in Sources */,
 				783DCA891EC2B387007D2540 /* ViperDemoProject.xcdatamodeld in Sources */,
 				783DCADB1EC2CE04007D2540 /* TableViewController.swift in Sources */,
+				78DF47081EC4074400DE36E9 /* UserInfoPresenter.swift in Sources */,
 				783DCAD41EC2B6B4007D2540 /* PostDetailInteractor.swift in Sources */,
 				783DCAE01EC2D2AD007D2540 /* User.swift in Sources */,
-				783DCACA1EC2B697007D2540 /* UserDetailProtocols.swift in Sources */,
+				78DF47021EC4020A00DE36E9 /* CommentTableViewCell.swift in Sources */,
 				783DCAD51EC2B6B4007D2540 /* PostDetailItem.swift in Sources */,
+				78DF47091EC4074400DE36E9 /* UserInfoProtocols.swift in Sources */,
 				783DCAD91EC2B6B4007D2540 /* PostDetailWireframe.swift in Sources */,
+				78DF470F1EC408BF00DE36E9 /* PopUpProtocol.swift in Sources */,
 				78DF46FE1EC3EB8B00DE36E9 /* PostTableViewCell.swift in Sources */,
+				78DF470D1EC4087A00DE36E9 /* PopUpDismissalTransaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,8 @@ class PostDetailWireframe: PostDetailWireframeProtocol {
     let PostDetailViewControllerIdentifier = "PostDetailViewController"
 
     var navigationController : UINavigationController?
-    //var somePopupWireframe : SomePopupWireframe?
+
+    var userInfoPopUpWireframe : UserInfoWireframe?
     
     func pushModule(fnavc:UINavigationController,post:Post) {
         //MODULE COMPONENTS
@@ -21,7 +22,7 @@ class PostDetailWireframe: PostDetailWireframeProtocol {
 
         //POPUPWIREFRAMES
 
-        //let somePopupWireframe = SomePopupWireFrame()
+        userInfoPopUpWireframe = UserInfoWireframe()
 
         //CONNECTING
         view.presenter = presenter
@@ -48,11 +49,11 @@ class PostDetailWireframe: PostDetailWireframeProtocol {
         navigationController?.popViewController(animated: true)
     }
 
-    /*
-     func presentSomePopupView(fpresenter : PostDetailPresenter) {
-         somePopupWireframe?.presentSomePopupModule(fpresenter: fpresenter)
+
+    func presentUserInfo(fview : UIViewController,user:User) {
+        userInfoPopUpWireframe?.presentModule(fview: fview,user:user)
      }
-     */
+
 
 
 }

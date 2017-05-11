@@ -81,6 +81,53 @@
             endingLineNumber = "87"
             landmarkName = "loadComments()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperDemoProject.PostListInteractor.loadComments () -&gt; ()"
+                  moduleName = "ViperDemoProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rocali/Documents/Zappts/2IOS/ViperDemoProject/ViperDemoProject/PostList/PostListInteractor.swift"
+                  timestampString = "516165069.098606"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "186">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperDemoProject.PostListInteractor.(loadComments () -&gt; ()).(closure #2)"
+                  moduleName = "ViperDemoProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rocali/Documents/Zappts/2IOS/ViperDemoProject/ViperDemoProject/PostList/PostListInteractor.swift"
+                  timestampString = "516165069.100504"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "2474">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperDemoProject.PostListInteractor.(loadComments () -&gt; ()).(closure #3)"
+                  moduleName = "ViperDemoProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rocali/Documents/Zappts/2IOS/ViperDemoProject/ViperDemoProject/PostList/PostListInteractor.swift"
+                  timestampString = "516165069.103169"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -113,6 +160,53 @@
             endingLineNumber = "44"
             landmarkName = "loadUsers()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperDemoProject.PostListInteractor.loadUsers () -&gt; ()"
+                  moduleName = "ViperDemoProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rocali/Documents/Zappts/2IOS/ViperDemoProject/ViperDemoProject/PostList/PostListInteractor.swift"
+                  timestampString = "516165069.11756"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "186">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperDemoProject.PostListInteractor.(loadUsers () -&gt; ()).(closure #2)"
+                  moduleName = "ViperDemoProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rocali/Documents/Zappts/2IOS/ViperDemoProject/ViperDemoProject/PostList/PostListInteractor.swift"
+                  timestampString = "516165069.124431"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "2474">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperDemoProject.PostListInteractor.(loadUsers () -&gt; ()).(closure #3)"
+                  moduleName = "ViperDemoProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rocali/Documents/Zappts/2IOS/ViperDemoProject/ViperDemoProject/PostList/PostListInteractor.swift"
+                  timestampString = "516165069.127603"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -160,6 +254,102 @@
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "updatePosts(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperDemoProject/PostDetail/PostDetailViewController.swift"
+            timestampString = "516165019.522893"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "seeUserDetail(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperDemoProject/PostDetail/PostDetailPresenter.swift"
+            timestampString = "516165028.428006"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "showUserInfo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperDemoProject.PostDetailPresenter.showUserInfo () -&gt; ()"
+                  moduleName = "ViperDemoProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rocali/Documents/Zappts/2IOS/ViperDemoProject/ViperDemoProject/PostDetail/PostDetailPresenter.swift"
+                  timestampString = "516165069.16308"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ViperDemoProject.PostDetailPresenter.showUserInfo () -&gt; ()"
+                  moduleName = "ViperDemoProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rocali/Documents/Zappts/2IOS/ViperDemoProject/ViperDemoProject/PostDetail/PostDetailPresenter.swift"
+                  timestampString = "516165069.165453"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "221">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperDemoProject/PostDetail/PostDetailPresenter.swift"
+            timestampString = "516165029.54312"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "showUserInfo()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperDemoProject/PostDetail/PostDetailWireframe.swift"
+            timestampString = "516165040.669624"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "presentUserInfo(fview:user:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

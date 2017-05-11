@@ -44,7 +44,6 @@ class PostListTableViewController: UITableViewController, PostListViewProtocol {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(indexPath.row)")
 
         if indexPath.row < posts.count {
             presenter?.selectedPost(posts[indexPath.row])

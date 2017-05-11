@@ -15,6 +15,7 @@ protocol PostDetailViewProtocol: class {
     func rightBtnClicked(_ sender:UIBarButtonItem)
 
     // PRESENTER -> VIEW
+    func setPostInfo(post:Post)
 }
 
 protocol PostDetailWireframeProtocol: class {
@@ -27,6 +28,7 @@ protocol PostDetailWireframeProtocol: class {
 
     // PRESENTER -> WIREFRAME
     func back()
+    func presentUserInfo(fview : UIViewController,user:User)
 
 }
 
@@ -39,6 +41,8 @@ protocol PostDetailPresenterProtocol: class {
     func rightBtnClicked()
 
     // VIEW -> PRESENTER
+    func getPostInfo()
+    func showUserInfo()
 }
 
 protocol PostDetailInteractorOutputProtocol: class {

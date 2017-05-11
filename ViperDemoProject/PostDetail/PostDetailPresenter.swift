@@ -30,4 +30,16 @@ class PostDetailPresenter: PostDetailPresenterProtocol, PostDetailInteractorOutp
         //
     }
 
+    func getPostInfo() {
+        if let post = interactor?.post {
+            view?.setPostInfo(post: post)
+        }
+    }
+
+    func showUserInfo() {
+        if let user = interactor?.post.getUser() {
+            wireframe?.presentUserInfo(fview: view as! UIViewController, user: user)
+        }
+
+    }
 }
